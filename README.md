@@ -127,3 +127,6 @@ Migraciones: Scripts que describen cambios en la estructura de la base de datos,
 - Herencia: Capacidad de los modelos de heredar atributos y comportamientos de otros modelos.
 
 -   Migraciones reversibles: Migraciones que pueden deshacerse, permitiendo volver a un estado anterior de la base de datos.
+
+
+continuaciòn
