@@ -87,3 +87,43 @@ Este enfoque facilita la separación de responsabilidades y mejora el mantenimie
 ```python
 python manage.py startapp my_first_app
 ```
+
+# ORM (Object-Relational Mapping)
+
+Un ORM (Object-Relational Mapping) es una técnica de programación que permite interactuar con bases de datos relacionales usando un modelo orientado a objetos. En lugar de escribir consultas SQL directamente, los desarrolladores pueden trabajar con las bases de datos mediante el uso de objetos y sus métodos, lo que simplifica la integración de bases de datos en aplicaciones.
+
+Con un ORM, las tablas de la base de datos se mapean a clases de programación, las filas de las tablas a instancias de esas clases, y las columnas de las tablas a atributos de las clases. Esto permite realizar operaciones como crear, leer, actualizar y eliminar registros en la base de datos utilizando código en lugar de SQL.
+
+Por ejemplo, en Python, los ORM como *SQLAlchemy* o Django *ORM* permiten manipular bases de datos de manera más sencilla. Aquí un ejemplo básico con *SQLAlchemy*:
+
+
+Los ORMs son tecnologías que nos permiten gestionar nuestra base de datos, en todo el sentido de la palabra. No importa que tipo de motor de base de datos tenemos. Por medio del ORM, todo lo gestionamos igual, como por ejemplo:
+
+    La estructura de nuestra base de datos, creación de tablas o vistas.
+    Gestión de datos, escritura, edición... (CRUD)
+
+Sin embargo, en ocasiones se puede escribir código SQL directamente por medio del ORM (en casos donde las queries son complejas). Conceptos que debemos tener en cuenta, como:
+
+Migraciones: Scripts que describen cambios en la estructura de la base de datos, permitiendo versionarla y modificarla de forma controlada.
+
+   - Semillas (Seeds): Datos iniciales que se insertan en la base de datos para pruebas o configuración inicial.
+
+   - Modelos: Clases que representan tablas de la base de datos en el código orientado a objetos.
+
+   - Consultas (Queries): Operaciones para recuperar, filtrar o manipular datos usando métodos del ORM en lugar de SQL directo.
+
+- Relaciones: Conexiones entre modelos que reflejan las relaciones entre tablas (uno a uno, uno a muchos, muchos a muchos).
+
+- Validaciones: Reglas definidas en los modelos para asegurar la integridad de los datos antes de guardarlos.
+
+- Callbacks: Métodos que se ejecutan automáticamente en ciertos momentos del ciclo de vida de un objeto (antes o después de guardar, eliminar, etc.).
+    
+- Eager Loading: Técnica para cargar datos relacionados en una sola consulta, evitando el problema N+1.
+
+- Transacciones: Operaciones que agrupan múltiples cambios en la base de datos, asegurando que se realicen todos o ninguno.
+
+- Índices: Estructuras de la base de datos que mejoran la velocidad de las consultas, definidas a través del ORM.
+
+- Herencia: Capacidad de los modelos de heredar atributos y comportamientos de otros modelos.
+
+-   Migraciones reversibles: Migraciones que pueden deshacerse, permitiendo volver a un estado anterior de la base de datos.
